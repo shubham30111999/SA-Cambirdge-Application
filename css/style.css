@@ -1,0 +1,183 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body { 
+  background-color: #000000; 
+  font-family: "Titillium Web", Arial, sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+/*CONTAINER STYLE*/
+.container {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+    width: 70vw;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+/*INPUT STYLE*/
+input {
+  background-color: #000000;
+  border: 0;
+  color: #000000;
+  font-family: "Titillium Web";
+  font-size: 20px;
+  line-height: 43px;
+  padding: 0 0.75em;
+  width: 500px;
+  -webkit-transition: all 0.35s ease-in;
+}
+input:active, input:focus {
+  outline: 1px solid #48788B;
+}
+.input-block{
+  background: #000000;
+  border:1px solid #000000;
+  height: 70px;
+  border-radius: 40px;
+  width: 600px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+.input-block #speech{float: left; height: 60px; margin: 5px 10px; display: block;} 
+.input-block #speech:focus, .input-block #speech:active{border:none; outline: none;}
+
+#rec{float: left; margin-left: 3vw; margin-top: 3vw; font-weight: 700; display: inline-block; outline: none; position: relative; z-index: 10;}
+
+/*BUTTON STYLE*/
+.btn {
+  background-color: #FFE600;
+  border: 0px solid #FFE600;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  font-family: "Titillium Web";
+  font-size: 20px;
+  line-height: 43px;
+  padding: 0 0.75em;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.35s ease-in;
+  width: 3.6vw;
+  height: 3.6vw;
+  border-radius: 50%;
+}
+.btn:hover {
+  background-color: #FFE600;
+  color: #000000;
+}
+.btn-sonar::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 3.6vw;
+  height: 3.6vw;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  -webkit-animation: sonar-effect 1s ease-in-out .1s infinite;
+  animation: sonar-effect 1s ease-in-out .1s infinite;  
+}
+
+/*RECORDING IMAGE STYLE*/
+#rec img{
+    margin: 0 0 0 0;
+    width: 1.5vw;
+    height: calc(1.5vw/0.6);
+}
+
+/*RESPONSE STYLE*/
+.spoken-response {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+.spoken-response.is-active {
+  max-height: 600px;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+.spoken-response__text {
+  margin: 0 0;
+  font-size: 1.5em;
+  border-radius: 4px;
+  color: #D3D3D3;	
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+.spoken-response__text {background-color: #000000; border: 2px solid #000000; color: #D3D3D3; padding: 1em; border-radius: 40px; -webkit-transition: all 0.35s ease-in;
+transition: all 0.35s ease-in;}
+
+/*POWERPOINT STYLE*/
+iframe {
+  display: block;
+  margin: auto;
+  margin-top: calc(50vh - (95vw * 0.291315346));
+  width: 95vw;
+  height: calc(95vw * 0.5826306914);
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+/*IMAGE/VIDEO STYLE*/
+#myModal, #myModal2 {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+
+/*H2 STYLE*/
+h2{color: #FFFFFF; font-weight: 400; text-align: center; font-size:42px;}
+
+/*SONAR EFFECT STYLE*/
+@-webkit-keyframes sonar-effect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 5px #FFE600, 0 0 10px 10px #FFE600, 0 0 0 10px #FFE600;
+  }
+  100% {
+    box-shadow: 0 0 0 5px #FFE600, 0 0 10px 10px #FFE600, 0 0 0 10px #FFE600;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes sonar-effect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 5px #FFE600, 0 0 10px 10px #FFE600, 0 0 0 10px #FFE600;
+  }
+  100% {
+    box-shadow: 0 0 0 5px #FFE600, 0 0 10px 10px #FFE600, 0 0 0 10px #FFE600;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/*LISTENING STYLE*/
+.listening{overflow:hidden; padding-left: 1em; padding-right: 1em; width: 700px}
+.listening span{color:#D3D3D3; font-size: 30px; margin:0 40px 0 0; float: left; padding-top: 0.8em}
+.listening img{float: left; width: 400px; height: 100px; padding: 0;}
+
+/*BRANDING STYLE*/
+.branding{position: fixed; bottom: 0; right: 0;}
+.branding h3{color:#FFFFFF; font-weight: 600; font-size: 14px; margin: 0 0 5px 10px;}
+.branding img{width: 175px; height:92px;}
