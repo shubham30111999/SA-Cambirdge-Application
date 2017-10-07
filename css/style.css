@@ -7,7 +7,7 @@ box-sizing: inherit;
 }
 
 body { 
-  background-color: #000000; 
+  background-color: #0f4d92; 
   font-family: "Titillium Web", Arial, sans-serif;
   font-size: 20px;
   margin: 0;
@@ -24,9 +24,9 @@ body {
 
 /*INPUT STYLE*/
 input {
-  background-color: #000000;
+  background-color: #0f4d92;
   border: 0;
-  color: #000000;
+  color: #0f4d92;
   font-family: "Titillium Web";
   font-size: 20px;
   line-height: 43px;
@@ -35,11 +35,11 @@ input {
   -webkit-transition: all 0.35s ease-in;
 }
 input:active, input:focus {
-  outline: 1px solid #48788B;
+  outline: 1px solid #0f4d92;
 }
 .input-block{
-  background: #000000;
-  border:1px solid #000000;
+  background: #0f4d92;
+  border:1px solid #0f4d92;
   height: 70px;
   border-radius: 40px;
   width: 600px;
@@ -56,9 +56,9 @@ input:active, input:focus {
 
 /*BUTTON STYLE*/
 .btn {
-  background-color: #FFE600;
-  border: 0px solid #FFE600;
-  color: #000000;
+  background-color: #000000;
+  border: 0px solid #000000;
+  color: #0f4d92;
   cursor: pointer;
   display: block;
   font-family: "Titillium Web";
@@ -73,8 +73,8 @@ input:active, input:focus {
   border-radius: 50%;
 }
 .btn:hover {
-  background-color: #FFE600;
-  color: #000000;
+  background-color: #0000;
+  color: #0f4d92;
 }
 .btn-sonar::before {
   content: '';
@@ -112,7 +112,7 @@ input:active, input:focus {
   margin: 0 0;
   font-size: 1.5em;
   border-radius: 4px;
-  color: #D3D3D3;	
+  color: #000000;	
   -webkit-transition: all 0.35s ease-in;
   transition: all 0.35s ease-in;
 }
@@ -147,10 +147,10 @@ h2{color: #FFFFFF; font-weight: 400; text-align: center; font-size:42px;}
   }
   40% {
     opacity: 0.5;
-    box-shadow: 0 0 0 5px #FFE600, 0 0 10px 10px #FFE600, 0 0 0 10px #FFE600;
+    box-shadow: 0 0 0 5px #000000, 0 0 10px 10px #000000, 0 0 0 10px #000000;
   }
   100% {
-    box-shadow: 0 0 0 5px #FFE600, 0 0 10px 10px #FFE600, 0 0 0 10px #FFE600;
+    box-shadow: 0 0 0 5px #000000, 0 0 10px 10px #000000, 0 0 0 10px #000000;
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
     opacity: 0;
@@ -162,10 +162,10 @@ h2{color: #FFFFFF; font-weight: 400; text-align: center; font-size:42px;}
   }
   40% {
     opacity: 0.5;
-    box-shadow: 0 0 0 5px #FFE600, 0 0 10px 10px #FFE600, 0 0 0 10px #FFE600;
+    box-shadow: 0 0 0 5px #000000, 0 0 10px 10px #000000, 0 0 0 10px #000000;
   }
   100% {
-    box-shadow: 0 0 0 5px #FFE600, 0 0 10px 10px #FFE600, 0 0 0 10px #FFE600;
+    box-shadow: 0 0 0 5px #000000, 0 0 10px 10px #000000, 0 0 0 10px #000000;
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
     opacity: 0;
@@ -174,7 +174,7 @@ h2{color: #FFFFFF; font-weight: 400; text-align: center; font-size:42px;}
 
 /*LISTENING STYLE*/
 .listening{overflow:hidden; padding-left: 1em; padding-right: 1em; width: 700px}
-.listening span{color:#D3D3D3; font-size: 30px; margin:0 40px 0 0; float: left; padding-top: 0.8em}
+.listening span{color:#000000; font-size: 30px; margin:0 40px 0 0; float: left; padding-top: 0.8em}
 .listening img{float: left; width: 400px; height: 100px; padding: 0;}
 
 /*BRANDING STYLE*/
