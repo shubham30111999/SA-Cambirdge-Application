@@ -1,0 +1,17 @@
+#robotImage {
+    width: 30vw;
+    height: calc(30vw*568/736);
+    -webkit-transition: all 0.35s linear;
+    transition: transform 1s linear;
+}
+
+/*RECORDING IMAGE STYLE*/
+#icon{
+    width: 1.75vw;
+    height: calc(1.75vw/0.6);
+}
+
+#myimage {
+    width: auto;
+    height: 300px;
+}

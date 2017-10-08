@@ -1,13 +1,13 @@
 <html>
 <head>
   
-	<title>Ninja</title>
+	<title>SA Yale Application</title>
 	
-	<link href="css/modal.css" rel="stylesheet">
+	<link href="css/image.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet" type="text/css">
 	
-	<link rel="shortcut icon" type="image/x-icon" href="ninjafavicon.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/script.js" type="text/javascript"></script>
@@ -15,113 +15,32 @@
 
 <body>
 	
-	<style>
-		#rec2{
-		    width: 100vw;
-		}
-	</style>
-	<div id="rec2">
-	   	<button id="rec" class="btn"><img src="images/microphone.png" alt="speak"></button>
-	</div>
+    <!--CONTAINER DIV-->
+	<div class="container1">
+
+        <button id="rec" class="btn"><img id="icon" src="images/microphone.png" alt="speak"></button>
+
+        <div>
+            <input id="speech" type="text">
+        </div> 
+     </div> 
 	
+    <!--CONTAINER DIV-->
+	<div class="container2">
+        <button class="speakbutton" id="startspeaking">Start</button>
+        <button class="speakbutton" id="stopspeaking">Stop</button>
+     </div> 
+    
 	<!--CONTAINER DIV-->
-	<div class="container">
+	<div class="container3">
+            <img id="robotImage" src="images/HandsomeDan.png">
+            <div id="spokenResponse" class="spoken-response">
+                <div class="spoken-response__text"></div>
 
-		<div class="input-block">
-			<input id="speech" type="text">
-		</div> 
-		
-		<div>
-		<style>
-			#robotImage {
-				float: left;
-				width: 20vw;
-				padding: 30px;
-			}
-		</style>
-		<img id="robotImage" src="images/ninjalogo.png">
-		<div id="spokenResponse" class="spoken-response">
-			<div class="spoken-response__text"></div>
-		</div>
-		</div>
-
-	</div>
-
-	<!--BRANDING DIV-->
-	<div class="branding">
-		<h3>Powered by</h3>
-		<img src="images/EY-Interno.png">
-	</div>
-
-	<!--IMAGE DIV
-	<div id="myModal" class="modal">
-
-		<!-- Modal Content (The Image/The Video)
-		<img class="modal-content" id="img01">
-
-	</div>
-
-	<!-- VIDEO DIV \
-	<div id="myModal2" class="modal">
-
-		<!-- Modal Content (The Image/The Video) 
-		<video class="modal2-content" id="vid01" controls type="video/webm">
-
-	</div>
-
-	<!-- PPT1 DIV
-	<div id="myModal3" class="modal">
-
-		<iframe src='https://onedrive.live.com/embed?cid=4B2BD9E769E24BB6&resid=4B2BD9E769E24BB6%21158&authkey=AI2FtLZzOfxX0zU&em=2&wdAr=1.7777777777777777' align='middle' frameborder='0'>
-		This is an embedded <a target='_blank' href='https://office.com'>Microsoft Office</a> presentation, powered by <a target='_blank' href='https://office.com/webapps'>Office Online</a>.
-		</iframe>
-
-	</div>
-
-	<!-- PPT2 DIV 
-	<div id="myModal4" class="modal">
-
-		<iframe src='https://onedrive.live.com/embed?cid=4B2BD9E769E24BB6&resid=4B2BD9E769E24BB6%21159&authkey=AFc9jNw1-hAvr-U&em=2&wdAr=1.7777777777777777' align='middle' frameborder='0'>
-		This is an embedded <a target='_blank' href='https://office.com'>Microsoft Office</a> presentation, powered by <a target='_blank' href='https://office.com/webapps'>Office Online</a>.
-		</iframe>
-
-	</div>
-
-	<!-- PPT3 DIV 
-	<div id="myModal5" class="modal">
-
-		<iframe crossorigin="anonymous" src='https://onedrive.live.com/embed?cid=4B2BD9E769E24BB6&resid=4B2BD9E769E24BB6%21165&authkey=AGaD2Jd1h_2XggQ&em=2&wdAr=1.7777777777777777' align='middle' frameborder='0'>
-		This is an embedded <a target='_blank' href='https://office.com'>Microsoft Office</a> presentation, powered by <a target='_blank' href='https://office.com/webapps'>Office Online</a>.
-		</iframe>
-
-	</div>
-
-	<!-- PPT4 DIV 
-	<div id="myModal6" class="modal">
-		
-		<iframe src='https://onedrive.live.com/embed?cid=4B2BD9E769E24BB6&resid=4B2BD9E769E24BB6%21146&authkey=ALsRAXZKs6jJkY8&em=2&wdAr=1.7777777777777777' align='middle' frameborder='0'>
-		This is an embedded <a target='_blank' href='https://office.com'>Microsoft Office</a> presentation, powered by <a target='_blank' href='https://office.com/webapps'>Office Online</a>.
-		</iframe>
-
-	</div>
-	
-	<!-- PPT5 DIV 
-	<div id="myModal7" class="modal">
-		
-		<iframe src='https://onedrive.live.com/embed?cid=4B2BD9E769E24BB6&resid=4B2BD9E769E24BB6%21165&authkey=AGaD2Jd1h_2XggQ&em=2&wdAr=1.7777777777777777' align='middle' frameborder='0'>
-		This is an embedded <a target='_blank' href='https://office.com'>Microsoft Office</a> presentation, powered by <a target='_blank' href='https://office.com/webapps'>Office Online</a>.
-		</iframe>
-
-	</div>
-		
-	<!-- PPT6 DIV 
-	<div id="myModal8" class="modal">
-		
-		<iframe src='https://onedrive.live.com/embed?cid=4B2BD9E769E24BB6&resid=4B2BD9E769E24BB6%21164&authkey=AMf--3dn1Dz7qNg&em=2&wdAr=1.7777777777777777' align='middle' frameborder='0'>
-		This is an embedded <a target='_blank' href='https://office.com'>Microsoft Office</a> presentation, powered by <a target='_blank' href='https://office.com/webapps'>Office Online</a>.
-		</iframe>
-
-	</div> -->
+                <!-- Modal Content (The Image/The Video) -->
+                <img id="myimage" style="display:none; opacity:0" src"">  
+            </div>
+    </div>
 
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet" type="text/css">
 
