@@ -63,6 +63,7 @@ function displayImage(imageUrl) {
     imageUrl+=".jpg";
     document.querySelector('#myimage').src = "images/"+imageUrl;
     document.querySelector('#myimage').style.display = "block";
+    document.querySelector('#myimage').style.height = "400px";
     requestAnimationFrame(opacity);
 };
 
@@ -72,13 +73,41 @@ function opacity() {
     if (x < 1) {
         x += 0.02;   
         document.querySelector('#myimage').style.opacity = x;
+        document.querySelector('#myvideo').style.opacity = x;
         requestAnimationFrame(opacity);
     };
 };
 
+function findVideoURL(text) {
+
+      console.log("TEXT IS : " + text);
+      var arr = text.split(" ");
+      console.log("A 0 " + arr[0]);
+      console.log("A 1 " + arr[1]);
+      console.log("A 2 " + arr[2]);
+
+      var videoValue = arr[1]+arr[2];
+      console.log("IMAGE VALUE " + videoValue);
+      displayVideo.call(this,videoValue);
+}
+
+/*** FUNCTION TO DISPLAY APPROPRIATE IMAGE ON THE MODAL ***/
+function displayVideo(videoUrl) {
+
+    console.log("CLICKED");
+    videoUrl+=".mp4";
+    document.querySelector('#myvideo').src = "videos/"+videoUrl;
+    document.querySelector('#myvideo').style.display = "block";
+    document.querySelector('#myvideo').style.height = "400px";
+    requestAnimationFrame(opacity);
+};
+
 //ALL CODE FROM HERE ON IS NOT TO BE EDITED AS IT IS WHAT CONNECTS US TO API.AI
 function startRecognition() {
-
+    
+    document.querySelector('#myimage').style.display = "none";
+    x = 0;
+    
     recognition = new webkitSpeechRecognition();
     recognition.continuous = false;
     recognition.interimResults = false;
@@ -112,6 +141,10 @@ function stopRecognition() {
     };
     updateRec();
     document.querySelector('#myimage').style.display = "none";
+    document.querySelector('#myimage').style.height = "0px";
+    document.querySelector('#myvideo').style.display = "none";
+    document.querySelector('#myvideo').style.height = "0px";
+    document.querySelector('#myvideo').pause();
     x = 0;
 };
 
@@ -160,26 +193,35 @@ function send() {
 }
 
 function prepareResponse(val) {
-      var debugJSON = JSON.stringify(val, undefined, 2),
-      spokenResponse = val.result.speech;
-      console.log("SPOKEN RESPONSE IS : " + spokenResponse);
-      console.log("SPOKEN RESPONSE IS : " + val.result.speech);
+    var debugJSON = JSON.stringify(val, undefined, 2),
+    spokenResponse = val.result.speech;
+    console.log("SPOKEN RESPONSE IS : " + spokenResponse);
+    console.log("SPOKEN RESPONSE IS : " + val.result.speech);
 
-      var subString1 = "displaying";
+    var subString1 = "artists";
+    var subString2 = "weddings";
 
-      var text = spokenResponse.toLowerCase();
-      console.log(" TEXT TO CHECK : " +text);
-      
-      //IMAGE  
-      if (text.indexOf(subString1) != -1) {
-            console.log("display found ");
-            findImageURL.call(this, text);
-      } else {
-            console.log("display not found ");
-      };
+    var text = spokenResponse.toLowerCase();
+    console.log(" TEXT TO CHECK : " +text);
 
-      respond(spokenResponse);
-      debugRespond(debugJSON);
+    //IMAGE  
+    if (text.indexOf(subString1) != -1) {
+        console.log("image found ");
+        findImageURL.call(this, text);
+    } else {
+        console.log("image not found ");
+    };
+    
+    //VIDEO  
+    if (text.indexOf(subString2) != -1) {
+        console.log("video found ");
+        findVideoURL.call(this, text);
+    } else {
+        console.log("video not found ");
+    };
+
+    respond(spokenResponse);
+    debugRespond(debugJSON);
 }
 
 function debugRespond(val) {

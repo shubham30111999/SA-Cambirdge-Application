@@ -1,7 +1,7 @@
 body { 
     display: flex;
     flex-direction: column;
-    background-color: #0f4d92; 
+    background-color: #00356B; 
     font-family: "Titillium Web", Arial, sans-serif;
     font-size: 20px;
 }
@@ -27,13 +27,13 @@ body {
 }
 
 .speakbutton {
-    color: #0f4d92;
+    color: #00356B;
     font-size: 20px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     font-family: "Titillium Web", Arial, sans-serif;
     height: 50;
     width: 100;
-    border: 1px solid #ffffff;
+    border: 1px solid #FFFFFF;
     border-radius: 25px;
     margin-right: 10px;
     margin-left: 10px;
@@ -41,17 +41,17 @@ body {
 }
 
 .speakbutton:hover {
-    background-color: #0f4d92;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    background-color: #00356B;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
     -webkit-transition: all 0.2s ease-in;
 }
 
 /*INPUT STYLE*/
 input {
-    background-color: #0f4d92;
+    background-color: #00356B;
     border: 0;
-    color: #0f4d92;
+    color: #00356B;
     font-family: "Titillium Web";
     font-size: 20px;
     width: 0px;
@@ -60,8 +60,8 @@ input {
 
 /*BUTTON STYLE*/
 .btn {
-    background-color: #ffffff;
-    border: 0px solid #ffffff;
+    background-color: #FFFFFF;
+    border: 0px solid #FFFFFF;
     cursor: pointer;
     -webkit-transition: all 0.35s ease-in;
     width: 4.5vw;
@@ -96,11 +96,11 @@ input {
 }
 .spoken-response__text {
     margin: 0 0;
-    font-size: 30px;
+    font-size: 25px;
     color: #FFFFFF;	
     -webkit-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
-    background-color: #0f4d92; 
+    background-color: #00356B; 
     border: 0px solid #ffffff; 
     padding: 1em; 
     border-radius: 25px; 
@@ -140,4 +140,4 @@ input {
 
 LISTENING STYLE
 .listening {overflow:hidden; padding-left: 1em; padding-right: 1em; width: 700px}
-.listening span{color:#FFFFFF; font-size: 30px; margin:0 40px 0 0; float: left; padding-top: 0.8em}
+.listening span{color:#FFFFFF; font-size: 25px; margin:0 40px 0 0; float: left; padding-top: 0.8em}
