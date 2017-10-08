@@ -111,6 +111,8 @@ function stopRecognition() {
         recognition = null;
     };
     updateRec();
+    document.querySelector('#myimage').style.display = "none";
+    x = 0;
 };
 
 function switchRecognition() {
