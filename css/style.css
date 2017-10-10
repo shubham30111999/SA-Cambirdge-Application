@@ -1,7 +1,7 @@
 body { 
     display: flex;
     flex-direction: column;
-    background-color: #000000; 
+    background-color: #00356B; 
     font-family: "Titillium Web", Arial, sans-serif;
     font-size: 20px;
 }
@@ -27,7 +27,7 @@ body {
 }
 
 .speakbutton {
-    color: #000000;
+    color: #00356B;
     font-size: 20px;
     background-color: #FFFFFF;
     font-family: "Titillium Web", Arial, sans-serif;
@@ -41,7 +41,7 @@ body {
 }
 
 .speakbutton:hover {
-    background-color: #000000;
+    background-color: #00356B;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     -webkit-transition: all 0.2s ease-in;
@@ -49,9 +49,9 @@ body {
 
 /*INPUT STYLE*/
 input {
-    background-color: #000000;
+    background-color: #00356B;
     border: 0;
-    color: #000000;
+    color: #00356B;
     font-family: "Titillium Web";
     font-size: 20px;
     width: 0px;
@@ -100,7 +100,7 @@ input {
     color: #FFFFFF;	
     -webkit-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
-    background-color: #000000; 
+    background-color: #00356B; 
     border: 0px solid #ffffff; 
     padding: 1em; 
     border-radius: 25px; 
