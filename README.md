@@ -1,2 +1,2 @@
-# SA-Yale-Application
-Repository for Shubham's Yale Application
+# SA-Cambridge-Application
+Repository for Shubham's Cambridge Application
