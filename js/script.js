@@ -5,7 +5,7 @@ var accessToken = "4c482f8feb244ed18a6b4bbadb05bdd8",
     $recbtn,
     //Listening reveal
     messageRecording = "<div class='listening'><span>Listening...</span></div>",
-    messageCouldntHear = "I couldn't hear you! Try asking again with questions about Shubham's dreams, favorite things, or hobbies.",
+    messageCouldntHear = "I couldn't hear you! Try asking again with questions about Shubham's dreams, favorite things, or hobbies...",
     messageInternalError = "Oh no, there has been an internal server error",
     messageSorry = "Sorry, I didn't get what you said! Perhaps questions about Shubham's dreams, favorite things, or hobbies will be better.",
     msg;
